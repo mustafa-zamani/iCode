@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <title>link a Js to HTML</title>
+    <script src="js/main.js"></script>
+    <!-- or as below
+        <script>
+       function changeText() {
+            document.getElementById("demo").innerHTML = "Text changed using JavaScript!";
+        }
+        </script>
+    -->
+</head>
+<body>
+    <h1>Inline JavaScript Example</h1>
+
+    <p id="demo">Click the button to change this text.</p>
+
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        // Inline JavaScript function
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Text changed using JavaScript!";
+        }
+    </script>
+</html>
